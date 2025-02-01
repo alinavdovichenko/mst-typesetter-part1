@@ -558,12 +558,12 @@ ul {
     width: 50%;
   }
   .hero h2 {
-    margin-top: 50px;
-    font-size: 60px;
-    margin-bottom: 40px;
+    margin-top: 100px;
+    font-size: 50px;
+    margin-bottom: 30px;
   }
   .hero p {
-    font-size: 26px;
+    font-size: 24px;
     margin-bottom: 30px;
   }
   .hero ul {
@@ -633,40 +633,6 @@ ul {
     height: 110%;
   }
 }
-
-/* Media height
-===========================================*/
-@media (max-height: 1000px) {
-    /* Hero Section */
-    .hero-content {
-      width: 50%;
-    }
-    .hero h2 {
-      margin-top: 100px;
-      font-size: 50px;
-      margin-bottom: 30px;
-    }
-    .hero p {
-      font-size: 22px;
-      margin-bottom: 20px;
-    }
-    .hero ul {
-      font-size: 18px;
-    }
-    .tick-img {
-      width: 25px;
-      height: auto;
-      margin-right: 20px;
-    }
-    .hero ul li span{
-      font-size: 24px;
-    }
-    .btn {
-      font-size: 18px;
-      margin-top: 20px;
-      padding: 15px 25px;
-    }
-  }
   
 /* Media - 1200
 ===========================================*/
@@ -690,9 +656,9 @@ ul {
         width: 57%;
       }
     .hero h2 {
-      margin-top: 40px;
+      margin-top: 70px;
       font-size: 50px;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
     .hero p {
       font-size: 24px;
@@ -775,7 +741,6 @@ ul {
       right: -20px;
     }
   }
-
 /* Media - 590
 ===========================================*/
 @media (max-width: 590px) {
@@ -908,4 +873,63 @@ ul {
       .footer-nav a{
         margin: 10px 0;
       }
+}
+
+/* Media height
+===========================================*/
+@media (max-height: 600px) {
+  /* Hero Section */
+  .hero-content {
+    width: 50%;
+  }
+  .hero h2 {
+    margin-top: 100px;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .hero p {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .hero ul {
+    font-size: 18px;
+  }
+  .tick-img {
+    width: 25px;
+    height: auto;
+    margin-right: 20px;
+  }
+  .hero ul li span{
+    font-size: 24px;
+  }
+  .btn {
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 15px 25px;
+  }
+  .hero-img-shadow {
+    width: 30%;
+    box-shadow: inset 600px 0 0 rgb(34, 34, 34, 0.2);
+  }
+  
+    /* Features */
+    .features {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  .feature-small {
+    width: 30%;
+    height: 400px;
+    overflow: hidden;
+  }
+  .feature-big {
+    width: 40%;
+    margin-top: 70px;
+  }
+  .feature-img {
+      width: 100%;
+      height: auto;
+    }
+
 }
