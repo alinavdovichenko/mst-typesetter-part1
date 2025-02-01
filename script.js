@@ -17,3 +17,23 @@ const handleScroll = () => {
 window.onscroll = () => {
     handleScroll();
 };
+
+/*Nav Toggle on mobile
+=================================================*/
+
+document.addEventListener('DOMContentLoaded', function() {
+    let navToggle = document.getElementById('navToggle');
+    let nav = document.getElementById('nav');
+
+    navToggle.addEventListener('click', function(event) {
+        event.preventDefault();
+
+        this.classList.toggle('active');
+        nav.classList.toggle('show');
+    });
+
+    window.addEventListener('resize', function() {
+        navToggle.classList.remove('active');
+        nav.classList.remove('show');
+    });
+});
