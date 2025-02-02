@@ -899,6 +899,9 @@ ul {
     .nav {
         display: none;
     }
+    .nav a:hover::before {
+      transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+    }
     .burger {
         display: block;
     }
