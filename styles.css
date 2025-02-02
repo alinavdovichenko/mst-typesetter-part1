@@ -145,6 +145,26 @@ ul {
     text-decoration: none;
   }
 
+  .nav a.active {
+    text-decoration: underline;
+    color: #0098E2;
+    transition: color .1s linear;
+  }
+  .nav a::before {
+    content: attr(data-hover);
+    color: #4CD700;
+    font-weight: 400;
+    position: absolute;
+    opacity: 0;
+    transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+    transition: transform 0.3s, opacity 0.3s;
+    pointer-events: none;
+  }
+  .nav a:hover::before {
+    transform: scale(1) translateX(0px) translateY(3px) rotate(0deg);
+    opacity: 1;
+  }
+
   .nav {
     transform: translateX(0%);
 		transition: transform .2s ease-out;
@@ -500,7 +520,10 @@ ul {
     margin: 0 15px;
     color: #ffffff;
     text-decoration: none;
+  }
 
+  .footer-nav a:hover{
+    color: #BAE8FF;
   }
 
   .footer-content {
@@ -536,7 +559,23 @@ ul {
   }
 
   .social-icon__item {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
     margin-right: 20px;
+    border-radius: 5px;
+  }
+
+  .social-icon__item img{
+    width: 100%;
+    height: auto;
+  }
+
+  .social-icon__item:hover {
+    background-color: #6b6b6b;
   }
 
   .footer-btn {
