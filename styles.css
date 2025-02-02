@@ -249,9 +249,9 @@ ul {
     line-height: 1.2;
     margin-bottom: 40px;
     color: transparent;    
-	-webkit-background-clip: text;
-	background-clip: text;
-	background-image: linear-gradient(to bottom, #BAE8FF, #0098E2);
+	  -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(to bottom, #BAE8FF, #0098E2);
   }
   
   .hero p {
@@ -699,10 +699,15 @@ ul {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
       }
     .feature-small {
+      background: #282829
+        url("/img/feature-bg.png") top
+        no-repeat;
+      background-size: cover;
       width: 100%;
-      height: 400px;
+      height: 500px;
       overflow: hidden;
     }
     .feature-big {
@@ -710,8 +715,8 @@ ul {
       margin-top: 70px;
     }
     .feature-img {
-        width: 100%;
-        height: auto;
+      height: 100%;
+      width: auto;
       }
   
     /* Form Section */
